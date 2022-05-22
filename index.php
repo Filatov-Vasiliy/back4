@@ -202,7 +202,7 @@ if(empty($_POST['check'])){
    
     try
     {
-        $stmt = $db->prepare("INSERT INTO application (name, email, date, gender, limbs, strenght, comment) VALUES (:name, :email, :date, :gender, :limbs, :strenght, :comment)");
+        $stmt = $db->prepare("INSERT INTO application1 (name, email, date, gender, limbs, strenght, comment) VALUES (:name, :email, :date, :gender, :limbs, :strenght, :comment)");
         $stmt->bindParam(':name', $name);//Привязка переменных к параметрам подготавливаемого запроса 
         $stmt->bindParam(':email', $email);
         $stmt->bindParam(':date', $date);
