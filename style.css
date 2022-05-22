@@ -2,6 +2,14 @@
   background-color: #8F8A91;
 }
 
+header{
+ background-color: #3cbdc4;
+ height: 80px;
+ font-size: 35pt;
+ font-weight: bold;
+ text-align: center;
+}
+
 
 #cont {
     padding: 15px;
