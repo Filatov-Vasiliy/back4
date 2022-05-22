@@ -89,7 +89,7 @@ else {
  // Проверяем ошибки
   $errors = FALSE;
 
-  if (empty($_POST['name']) || !preg_match("/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/",$_POST["name"])) {
+  if (empty($_POST['name']) || !preg_match("/^[a-zA-Z0-9_.+-]+$/",$_POST["name"])) {
      // Выдаем куку на день с флажком об ошибке в поле name
     setcookie('name_error', '1', time() + 24 * 60 * 60);
     $errors = TRUE;
